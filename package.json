@@ -1,8 +1,12 @@
 {
-  "name": "mediahub-pro",
-  "version": "1.0.0",
+  "name": "yoursxm-media-hub",
+  "version": "2.0.0",
+  "description": "Advanced Media Downloader by YourSXM",
   "main": "api/search.js",
   "dependencies": {
     "yt-search": "^2.10.4"
+  },
+  "scripts": {
+    "start": "node api/search.js"
   }
 }
