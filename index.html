@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MediaHub Pro | YourSXM</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Cairo:wght@400;700;900&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <div class="bg-animate"></div>
+
+    <div class="container">
+        <nav class="glass-nav">
+            <div class="logo">🚀 Media<span>Hub</span></div>
+            <div class="dev-icon" onclick="toggleModal()">
+                <i class="fas fa-user-ninja"></i>
+            </div>
+        </nav>
+
+        <main class="hero">
+            <h1>عالم المحتوى بين يديك</h1>
+            <p>ابحث، استمع، وحمل بضغطة زر واحدة</p>
+            
+            <div class="search-wrapper">
+                <input type="text" id="userInput" placeholder="أدخل اسم الأغنية أو رابط الفيديو...">
+                <button id="searchBtn">
+                    <span class="btn-text">اكتشاف</span>
+                    <i class="fas fa-search"></i>
+                </button>
+            </div>
+
+            <div id="loader" class="loader-container">
+                <div class="spinner"></div>
+                <p>جاري سحب البيانات من السحاب...</p>
+            </div>
+
+            <div id="resultContainer" class="result-card hidden">
+                <div class="badge">تم العثور على النتيجة</div>
+                <img id="thumb" src="" alt="Thumbnail">
+                <h2 id="videoTitle"></h2>
+                <div class="stats">
+                    <span id="videoAuthor"><i class="fas fa-user"></i> </span>
+                    <span id="videoDuration"><i class="fas fa-clock"></i> </span>
+                </div>
+                <div class="action-grid">
+                    <button class="dl-btn mp4"><i class="fas fa-video"></i> MP4 فيديو</button>
+                    <button class="dl-btn mp3"><i class="fas fa-music"></i> MP3 صوت</button>
+                </div>
+            </div>
+        </main>
+    </div>
+
+    <div id="devModal" class="modal">
+        <div class="modal-content glass">
+            <span class="close" onclick="toggleModal()">&times;</span>
+            <div class="dev-profile">
+                <div class="dev-avatar">SX</div>
+                <h2>Yoursexm</h2>
+                <p>Developer & Tech Enthusiast</p>
+                <div class="dev-links">
+                    <a href="tel:01121454510" class="dev-item">
+                        <i class="fas fa-phone"></i>
+                        <span>01121454510</span>
+                    </a>
+                    <a href="https://www.instagram.com/_yaseinhsied?igsh=MXJpbGs2ZXdwa2E2" target="_blank" class="dev-item">
+                        <i class="fab fa-instagram"></i>
+                        <span>Instagram</span>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
